@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⚡ TaskFlow
+# TaskFlow
 
 **A modern, production-ready Task Management REST API built with .NET 6 & C# following Clean Architecture principles.**
 
@@ -16,7 +16,7 @@
 
 ---
 
-## 📖 Overview
+## Overview
 
 **TaskFlow** demonstrates enterprise-grade software architecture patterns in C#. It implements Robert C. Martin's (**Uncle Bob**) **Clean Architecture**, completely decoupling business domain rules from data stores, external frameworks, and presentation layers.
 
@@ -24,7 +24,7 @@ Additionally, it comes with a built-in **interactive web dashboard** served dire
 
 ---
 
-## 🏛 Architecture
+## Architecture
 
 Dependencies strictly flow **inward**. Outer layers depend on inner layers; the inner Domain layer has **zero dependencies**.
 
@@ -65,7 +65,7 @@ flowchart TD
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 - **CQRS Pattern**: Segregated read/write pipelines using `MediatR`.
 - **Validation Pipeline**: Automatic cross-cutting request validation with `FluentValidation` before reaching handlers.
@@ -74,12 +74,12 @@ flowchart TD
 - **Audit Logging**: Automatic tracking of `CreatedAt` and `UpdatedAt` timestamps on all entities.
 - **Database Seeding**: Default categories initialized automatically on startup.
 - **Interactive UI**:
-  - 🎨 Built-in Single Page Application at `/`
-  - 📖 Swagger API documentation at `/swagger`
+  - Built-in Single Page Application at `/`
+  - Swagger API documentation at `/swagger`
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **Language:** C# 10
 - **Framework:** .NET 6.0 Web API
@@ -92,7 +92,7 @@ flowchart TD
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - [.NET 6.0 SDK](https://dotnet.microsoft.com/download/dotnet/6.0) or higher
@@ -125,9 +125,9 @@ dotnet run --project src/TaskFlow.API
 
 ---
 
-## 📡 API Endpoints
+## API Endpoints
 
-### 📋 Tasks (`/api/tasks`)
+### Tasks (`/api/tasks`)
 
 | Method | Endpoint | Description |
 | :--- | :--- | :--- |
@@ -152,7 +152,7 @@ Content-Type: application/json
 
 ---
 
-### 📁 Categories (`/api/categories`)
+### Categories (`/api/categories`)
 
 | Method | Endpoint | Description |
 | :--- | :--- | :--- |
@@ -163,7 +163,7 @@ Content-Type: application/json
 
 ---
 
-## 🧪 Testing
+## Testing
 
 The solution includes automated unit tests validating command handlers, uniqueness business rules, and input validations.
 
@@ -181,7 +181,7 @@ Passed!  - Failed: 0, Passed: 8, Skipped: 0, Total: 8
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 TaskFlow/
@@ -213,6 +213,7 @@ TaskFlow/
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the [MIT License](LICENSE).
+Developed by Hamza Ihsan
